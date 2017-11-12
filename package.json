@@ -1,0 +1,14 @@
+{
+  "name": "js-obfuscator-api",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "rm -f './test/out.js'&& grunt test --gruntfile ./test/Gruntfile.js"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=8.6.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1"
+  }
+}
