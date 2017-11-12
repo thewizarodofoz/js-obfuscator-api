@@ -1,4 +1,4 @@
-#JS Obfuscator Grunt Task
+# JS Obfuscator Grunt Task
 
 Obfuscate your JS code using the formal (paid) HTTP API of <http://www.javascriptobfuscator.com>.
 
