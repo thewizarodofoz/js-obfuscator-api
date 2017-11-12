@@ -1,4 +1,4 @@
-const Obfuscator = require('./obfuscator');
+const Obfuscator = require('./lib/obfuscator');
 
 module.exports = function (grunt) {
 

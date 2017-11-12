@@ -1,6 +1,6 @@
 module.exports = function (grunt) {
 
-    require('../lib/index')(grunt);
+    require('../index')(grunt);
 
     grunt.initConfig({
 
