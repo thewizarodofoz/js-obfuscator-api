@@ -1,6 +1,13 @@
 {
   "name": "js-obfuscator-api",
-  "version": "0.0.3",
+  "repository": "https://github.com/thewizarodofoz/js-obfuscator-api",
+  "author": {
+    "name": "Oz Weiss",
+    "email": "thewizarodofoz@gmail.com"
+  },
+  "license": "MIT",
+  "description": "Obfuscate JavaScript files via the formal (paid) API of http://javascriptobfuscator.com.",
+  "version": "0.0.4",
   "scripts": {
     "test": "rm -f './test/out.js'&& grunt test --gruntfile ./test/Gruntfile.js"
   },
