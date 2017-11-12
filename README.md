@@ -9,21 +9,33 @@ Obfuscate your JS code using the formal (paid) HTTP API of <http://www.javascrip
 $ npm i -D js-obfuscator-api
 ```
 
-### Add an entry in Gruntfile.js:
+### Gruntfile.js:
 ```js
-grunt.initConfig({
+module.exports = function (grunt) {
+    require('js-obfuscator-api')(grunt);
 
-    obfuscate: {
-        dist: {
-            src: 'mock.js',
-            dest: 'out.js',
-            obfuscateOptions: {
-                APIKey: '***',
-                APIPwd: '***'
+    grunt.initConfig({
+
+        obfuscate: {
+            dist: {
+                src: 'dist/bundle.js',
+                dest: 'dist/bundle.js',
+                obfuscateOptions: {
+                    APIKey: process.env.OBFUSCATOR_API_KEY,
+                    APIPwd: process.env.OBFUSCATOR_API_PWD,
+                    VariableExclusion: '^_get_ ^_set_ ^_mtd_',
+                    EncodeStrings: true,
+                    MoveStrings: true,
+                    ReplaceNames: true,
+                    WriteFormats_KeepIndent: false
+                }
             }
         }
-    }
-});
+        
+    });
+
+    grunt.registerTask('deploy', ['obfuscate:dist']);
+};
 ```
 
 Check out the [default options](../master/lib/defaults.js) and 

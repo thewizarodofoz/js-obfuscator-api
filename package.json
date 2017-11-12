@@ -1,6 +1,6 @@
 {
   "name": "js-obfuscator-api",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "test": "rm -f './test/out.js'&& grunt test --gruntfile ./test/Gruntfile.js"
   },
