@@ -26,7 +26,7 @@ grunt.initConfig({
 });
 ```
 
-Check out the [default options](../lic/defaults.js) and 
+Check out the [default options](../blob/master/lib/defaults.js) and 
 read more about obfuscation options at: <https://service.javascriptobfuscator.com/httpapi.asmx?WSDL>.
 
 ### API key and password:
