@@ -1,4 +1,5 @@
 #JS Obfuscator Grunt Task
+
 Obfuscate your JS code using the formal (paid) HTTP API of <http://www.javascriptobfuscator.com>.
 
 **You need a [Premium Membership Subscription](http://www.javascriptobfuscator.com/premium-membership.aspx) in order to use this package.**
