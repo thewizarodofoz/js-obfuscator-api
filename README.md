@@ -1,3 +1,5 @@
+![Langauge](https://badge.langauge.io/thewizarodofoz/js-obfuscator-api)
+
 # JS Obfuscator Grunt Task
 
 Obfuscate your JS code using the formal (paid) HTTP API of <http://www.javascriptobfuscator.com>.
